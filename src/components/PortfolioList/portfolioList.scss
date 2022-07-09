@@ -1,0 +1,22 @@
+@import "../../global.scss";
+
+li{
+    font-size: 16px;
+    margin-right: 40px;
+    margin-bottom: 18px;
+    padding: 10px;
+    border-radius: 20px;
+    height: 20px;
+    cursor: pointer;
+    overflow: hidden;
+
+    @include mobile {
+        margin-right: 20px;
+        font-size: 12px;
+    }
+
+    &.active{
+        background-color: $mainColor;
+        color: white;
+    }
+}

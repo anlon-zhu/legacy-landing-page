@@ -1,0 +1,99 @@
+@import "../../global.scss";
+
+.topbar {
+    background-color: white;
+    color: $mainColor;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+
+    .wrapper {
+        padding: 10px 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        .left{
+            display: flex;
+            align-items: center;
+
+            .logo{
+                font-size: 25px;
+                font-weight: 700;
+                text-decoration: none;
+                color: inherit;
+                margin-right: 40px;
+            }
+        }
+    
+        .right{
+            display: flex;
+            align-items: center;
+
+            .itemContainer{
+                @include mobile {
+                    display: none;
+                }
+
+                display: flex;
+                align-items: center;
+                margin-right: 28px;
+                  
+                a {
+                    color: inherit;
+                    text-decoration: none;
+                
+                .icon {
+                    font-size: 18px;
+                    margin-left: 5px;
+                }
+            }
+            }
+            &.active{
+                background-color: $mainColor;
+                color: white;
+            }
+
+            .hamburger {
+                width: 30px;
+                height: 24px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                cursor: pointer;
+
+                span{
+                    width: 100%;
+                    height: 3px;
+                    background-color: $mainColor;
+                    transform-origin: left;
+                    border-radius: 6px;
+                    transition: all 2s ease;
+                }
+            }
+        }
+    }
+
+    &.active{
+        background-color: $mainColor;
+        color: white;
+
+        .hamburger{
+            span{
+                &:first-child{
+                    background-color: white;
+                    transform: rotate(45deg);
+                }
+                &:nth-child(2){
+                    opacity: 0;
+                }
+                &:last-child{
+                    background-color: white;
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+    }
+}
