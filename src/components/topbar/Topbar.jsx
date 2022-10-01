@@ -18,7 +18,7 @@ export default function Topbar( {menuOpen, setMenuOpen}) {
           </div>
 
           <div className="itemContainer">
-            <a href="https://github.com/anlonymous" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/anlon-zhu" target="_blank" rel="noopener noreferrer">
             <GitHub className="icon"/>
             </a>
           </div>
