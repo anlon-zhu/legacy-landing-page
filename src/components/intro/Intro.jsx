@@ -7,7 +7,7 @@ export default function Intro() {
     <div className="intro" id="intro">
       <div className="left">
         <div className="imgContainer">
-          <img src="assets/AnlonZ_headshot.png" alt="" />
+          <img src="assets/AnlonZ_headshot.png" style="" alt="" />
         </div>
       </div>
       <div className="right">
@@ -21,7 +21,9 @@ export default function Intro() {
               sequence={[
                 "Princeton Computer Science",
                 2200,
-                "Software Developer",
+                "Aspiring SWE",
+                2200,
+                "Full-stack Developer",
                 2200,
                 "Sustainability Advocate",
                 2200,

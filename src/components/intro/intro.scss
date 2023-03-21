@@ -21,6 +21,7 @@
         .imgContainer{
             width: 600px;
             height: 600px;
+            position: relative;
             background-color: $mainColor;
             border-radius: 50%;
             display: flex;
@@ -33,9 +34,11 @@
             }
 
             img{
-                width: 75%;
+                width: 130%;
+                position: absolute;
+                bottom: 0;
                 @include mobile {
-                    width: 70%;
+                    width: 120%;
                 }
             }
         }
