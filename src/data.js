@@ -1,28 +1,28 @@
 
 export const webPortfolio = [
-    {
-      id: 1,
+  {
+    id: 1,
+    title: "Hexify",
+    img: "",
+    link: ""
+  },  
+  {
+      id: 2,
       title: "Rhythmix Music Game",
       img: "../assets/Rhythmix.png",
       link: "https://github.com/anlonymous/rhythmix",
     },
     {
-      id: 2,
+      id: 3,
       title: "MVUSD Data Analysis via Pandas",
       img: "../assets/MVUSD.png",
       link: "https://ecomotion.us/campuses/accomplishments/#toggle-id-6",
     },
     {
-      id: 3,
+      id: 4,
       title: "Energy Potential Research",
       img: "../assets/RE-Research.png",
       handleClick(setGalOpen, galOpen) {setGalOpen(3)},
-    },
-    {
-      id: 4,
-      title: "Coming Soon",
-      img: "",
-      link: ""
     },
   ];
   
